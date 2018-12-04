@@ -1,0 +1,16 @@
+body {
+	display: inline;
+}
+
+div {
+	float: left;
+	margin: 5px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+}
+button {
+	height: 50px;
+	width: 50px;
+	text-transform: uppercase;
+}
