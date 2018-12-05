@@ -1,14 +1,12 @@
-var createDiv = [];
+var divbox = [];
 
 window.onload = function blockCreation() {
-    for (var i = 1; i <= 20; i++) {
-        createDiv[i] = document.createElement('div');
-        createDiv[i].style.height = "50px";
-        createDiv[i].style.width = "50px";
-        createDiv[i].style.backgroundColor = randomColor();
-        createDiv[i].innerText = i;
-        createDiv[i].style.color = randomColor();
-        document.body.append(createDiv[i]);
+    for (var i = 0; i <= 19; i++) {  
+        divbox[i] = document.createElement('div');
+        divbox[i].style.backgroundColor = randomColor();
+        divbox[i].innerText = i+1;
+        divbox[i].style.color = randomColor();
+        document.body.append(divbox[i]);
     }
 
 }
@@ -21,8 +19,8 @@ function randomColor() {
 }
 
 function changeColor() {
-    for (i = 1; i < createDiv.length; i++) {
-        createDiv[i].style.backgroundColor = randomColor();
-        createDiv[i].style.color = randomColor();
+    for (i = 0; i < divbox.length; i++) {
+        divbox[i].style.backgroundColor = randomColor();
+        divbox[i].style.color = randomColor();
     }
 }
