@@ -1,15 +1,14 @@
+var createDiv = [];
 
-var newDiv = [];
-
-window.onload = function blockcreation() {
+window.onload = function blockCreation() {
     for (var i = 1; i <= 20; i++) {
-        newDiv[i] = document.createElement('div');
-        newDiv[i].style.height = "50px";
-        newDiv[i].style.width = "50px";
-        newDiv[i].style.backgroundColor = randomColor();
-        newDiv[i].innerText = i;
-        newDiv[i].style.color = randomColor();
-        document.body.append(newDiv[i]);
+        createDiv[i] = document.createElement('div');
+        createDiv[i].style.height = "50px";
+        createDiv[i].style.width = "50px";
+        createDiv[i].style.backgroundColor = randomColor();
+        createDiv[i].innerText = i;
+        createDiv[i].style.color = randomColor();
+        document.body.append(createDiv[i]);
     }
 
 }
@@ -21,9 +20,9 @@ function randomColor() {
     return "rgb(" + r + " " + g + " " + b + ")";
 }
 
-function changecolor(){  
-    for (i = 1; i < newDiv.length; i++) {
-    newDiv[i].style.backgroundColor = randomColor();
-    newDiv[i].style.color = randomColor();
-  }
+function changeColor() {
+    for (i = 1; i < createDiv.length; i++) {
+        createDiv[i].style.backgroundColor = randomColor();
+        createDiv[i].style.color = randomColor();
+    }
 }
