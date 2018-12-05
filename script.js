@@ -3,9 +3,9 @@ var divbox = [];
 window.onload = function createBlocks() {
     for (var i = 0; i < 20 ; i++) {  
         divbox[i] = document.createElement('div');
+        divbox[i].style.color = getRandomColor();
         divbox[i].style.backgroundColor = getRandomColor();
         divbox[i].innerText = i+1;
-        divbox[i].style.color = getRandomColor();
         document.body.append(divbox[i]);
     }
 
