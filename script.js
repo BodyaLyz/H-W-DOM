@@ -18,7 +18,7 @@ function getRandomColor() {
     return "rgb(" + r + " " + g + " " + b + ")";
 }
 
-document.getElementById('swapButton').onclick = function changeColor() {
+swapButton.onclick = function changeColor() {
     for (i = 0; i < divbox.length; i++) {
         divbox[i].style.backgroundColor = getRandomColor();
         divbox[i].style.color = getRandomColor();
